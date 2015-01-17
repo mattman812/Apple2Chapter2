@@ -4,7 +4,7 @@
 //
 //  Created by ITCS2825 MRanda on 1/16/15.
 //  Copyright (c) 2015 ITCS2825_Lab1_MRanda Hour2. All rights reserved.
-//
+//  https://github.com/mattman812/Apple2Chapter2.git git path
 
 #import "MVRAppDelegate.h"
 
