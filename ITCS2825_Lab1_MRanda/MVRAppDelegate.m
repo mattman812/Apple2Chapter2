@@ -2,7 +2,7 @@
 //  MVRAppDelegate.m
 //  ITCS2825_Lab1_MRanda
 //
-//  Created by ITCS2825 Kozlevcar on 1/16/15.
+//  Created by ITCS2825 MRanda on 1/16/15.
 //  Copyright (c) 2015 ITCS2825_Lab1_MRanda Hour2. All rights reserved.
 //
 
@@ -13,6 +13,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    //Add some Buttons
+    UILabel *myMessage;
+    //UILabel *myUnusedMessage;
+    
+    myMessage = [[UILabel alloc]initWithFrame:CGRectMake(30.0, 50.0, 300.0, 50.0)];
+    myMessage.font  = [UIFont systemFontOfSize: 48.0];
+    myMessage.text = @"Hello Xcode";
+    myMessage.textColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Background"]];
+    [self.window addSubview:myMessage];
+    self.window.rootViewController = [UIViewController new];
+    
+    
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
